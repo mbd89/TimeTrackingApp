@@ -1,0 +1,234 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--Sodarkblue);
+  color: white;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding-block:1em ;
+}
+main{
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+:root {
+  /* colors */
+  --Sodarkblue: hsl(226, 43%, 10%);
+  --darkBlue: hsl(235, 46%, 20%);
+  --desaturatedBlue: hsl(235, 45%, 61%);
+  --paleBlue: hsl(236, 100%, 87%);
+
+  --avatar: hsl(246, 80%, 60%);
+
+  --orange: hsl(15, 100%, 70%);
+  --cyan: hsl(195, 74%, 62%);
+  --red: hsl(348, 100%, 68%);
+  --green: hsl(145, 58%, 55%);
+  --purple: hsl(264, 64%, 52%);
+  --yellow: hsl(43, 84%, 65%);
+
+}
+
+
+
+.container {
+  width: min(69.375rem, calc(100%-2rem));
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 1110px;
+
+}
+
+.avatar {
+  background: var(--avatar);
+  border-radius: 20px;
+  padding: 2em;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+ margin-block-end: -1em;
+ z-index: 1;
+ position: relative;
+
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 0.8399999999999999rem + 1.8000000000000003vw, 3rem);
+
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+h1>span {
+  font-size: .8rem;
+  color: var(--paleBlue);
+}
+
+.avatar img {
+  border-radius: 50%;
+  border: 3px solid white;
+  width: 70px;
+}
+
+.colored-card {
+  position: relative;
+  background-color: var(--orange);
+  position: relative;
+  z-index: -2;
+  border-radius: 20px;
+  padding: 2em 1em;
+  margin-block-end: -2em;
+  overflow: hidden;
+}
+
+.colored-card.work {
+  background: var(--orange);
+
+}
+
+.colored-card.play {
+  background: var(--cyan);
+}
+
+.colored-card.study {
+  background: var(--red);
+}
+
+.colored-card.exercise {
+  background-color: var(--green);
+}
+
+.colored-card.colored-card.exercise .icon {
+  top: -.01rem;
+}
+
+.colored-card.social {
+  background: var(--purple);
+}
+
+
+.colored-card.selfcare {
+  background-color: var(--yellow);
+}
+
+.activity {
+  background: var(--darkBlue);
+  padding: 2em 1em;
+  border-radius: 20px;
+}
+
+.activity div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity div:first-child {
+  padding-block-end: 0.5em;
+}
+
+.current {
+  font-weight: lighter;
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.1rem + 2vw, 3.5rem);
+}
+
+.previous {
+  color: var(--paleBlue);
+}
+
+.icon {
+  position: absolute;
+  top: -.99em;
+  right: .8rem;
+  z-index: -1;
+}
+
+.frequency {
+  position: relative;
+  background: var(--darkBlue);
+  padding: 2em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-start: 2.5em;
+  
+}
+
+.btn {
+  color: var(--desaturatedBlue);
+  background: inherit;
+  border: none;
+  cursor: pointer;
+
+}
+.btn:hover{
+  color:white;
+}
+.btn:focus{
+  color:white;
+}
+
+.colored-card.play {
+  background: var(--cyan);
+}
+
+.icon-ellipsis {
+  cursor: pointer;
+  background: inherit;
+  border: none;
+}
+
+
+
+@media screen and (min-width:1024px){
+.container{
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "jeremy work play study"
+                       "jeremy exercise social selfCaere";
+  
+  gap:2em;
+}
+.activity div:nth-of-type(2){
+  flex-direction: column;
+  align-items: start;
+}
+.Jeremy-Robson-profile{
+  grid-area: jeremy;
+}
+.avatar{
+ flex-direction: column;
+}
+.avatar img{
+  align-self: flex-start;
+}
+.frequency{
+  flex-direction: column;
+  gap: 1em;
+  align-items: start;
+}
+
+}

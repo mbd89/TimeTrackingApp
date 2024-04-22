@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+
+    <div class="container">
+
+      <div class="Jeremy-Robson-profile">
+
+        <div class="avatar">
+          <img src="images/image-jeremy.png" alt="Jeremy photo">
+          <h1><span>Report for</span><br>
+            Jeremy Robson</h1>
+        </div>
+
+        <div class="frequency">
+          <button class="btn daily-btn">Daily</button>
+          <button class="btn weekly-btn">Weekly</button>
+          <button class="btn monthly-btn">Monthly</button>
+        </div>
+
+      </div>
+
+      <div class="card work">
+        <div class="colored-card work">
+          <!--<p>Hello</p>-->
+          <img class="icon" src="images/icon-work.svg" alt="icon-work">
+        </div>
+        <div class="activity work">
+          <div>
+            <h2>Work</h2>
+            <button class="icon-ellipsis"><img src="images/icon-ellipsis.svg" alt="icon-ellipsis"></button>
+          </div>
+
+          <div class="text">
+            <p class="current">hrs</p>
+            <p class="previous">Last Week - <span id="previousweekly"></span></p>
+          </div>
+
+        </div>
+
+      </div>
+
+    
+
+    <div class="card play">
+      <div class="colored-card play">
+        <!--<p>Hello</p>-->
+        <img class="icon" src="images/icon-play.svg" alt="icon-play">
+
+      </div>
+      <div class="activity play">
+        <div>
+          <h2>Play</h2>
+          <button class="icon-ellipsis"><img src="images/icon-ellipsis.svg" alt="icon-ellipsis"></button>
+        </div>
+         <div class="text">
+            <p class="current"></p> 
+           
+            <p class="previous">Last Week - <span id="previousweekly"></span></p>
+            
+         </div>
+      </div>
+
+    </div>
+
+    <div class="card study">
+      <div class="colored-card study">
+        <!--<p>Hello</p>-->
+        <img class="icon" src="images/icon-study.svg" alt="icon-study">
+
+      </div>
+
+      <div class="activity play">
+        <div>
+          <h2>Study</h2>
+          <button class="icon-ellipsis"><img src="images/icon-ellipsis.svg" alt="icon-ellipsis"></button>
+        </div>
+        <div class="text">
+            <p class="current"></p>
+            <p class="previous">Last Week - <span id="previousweekly"></span></p>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="card exercise">
+      <div class="colored-card exercise">
+        <!--<p>Hello</p>-->
+        <img class="icon" src="images/icon-exercise.svg" alt="icon-exercise">
+
+      </div>
+
+      <div class="activity exercise">
+        <div>
+          <h2>Exercise</h2>
+          <button class="icon-ellipsis"><img src="images/icon-ellipsis.svg" alt="icon-ellipsis"></button>
+        </div>
+           <div class="text">
+            
+           <p class="current"></p>
+            <p class="previous">Last Week - <span id="previousweekly"></span></p>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="card social">
+      <div class="colored-card social">
+        <!--<p>Hello</p>-->
+        <img class="icon" src="images/icon-social.svg" alt="icon-social">
+
+      </div>
+
+      <div class="activity social">
+        <div>
+          <h2>Social</h2>
+          <button class="icon-ellipsis"><img src="images/icon-ellipsis.svg" alt="icon-ellipsis"></button>
+        </div>
+         <div class="text">
+            
+
+            <p class="current"></p>
+            <p class="previous">Last Week - <span id="previousweekly"></span></p>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="card selfcare">
+      <div class="colored-card selfcare">
+        <!--<p>Hello</p>-->
+        <img class="icon" src="images/icon-self-care.svg" alt="icon-selfcare">
+
+      </div>
+
+      <div class="activity selfcare">
+        <div>
+          <h2>Self Care</h2>
+          <button class="icon-ellipsis"><img src="images/icon-ellipsis.svg" alt="icon-ellipsis"></button>
+        </div>
+       
+        <div class="text">
+           
+
+            <p class="current"></p>
+            <p class="previous">Last Week - <span id="previousweekly"></span></p>
+          </div>
+     
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+  </main>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
